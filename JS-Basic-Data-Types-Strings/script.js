@@ -138,3 +138,78 @@ console.log("Shhh: " + superSecretPassword);
         // it will start from the end of the string
         let test3 = newStatement.slice(-8);                                // ==> to start!!!
         console.log(test3);
+
+
+// ********************** //
+// *** Extra Practice *** //
+// ********************** //
+
+    // ** Find out if there is a specific word in a string: ** //
+
+        const extraPratice = `
+        *******************
+        EXTRA PRACTICE !!!
+        *******************`;
+        console.log(extraPratice);
+
+        const str1 = "Web Dev is amazing!";
+        // ==> Look for each of these separately:
+        console.log(str1.includes("development"));
+        console.log(str1.includes("Development"));
+        console.log(str1.includes("web"));
+        console.log(str1.includes("ing"));
+        console.log(str1.includes("Web"));
+
+    // ** Concatenate the following strings: ** //
+
+        let str2 = "Hey!";
+        let str3 = "How are you?";
+        str2 += " " + str3;
+        console.log(str2);
+
+        let str4 = 10;
+        let str5 = 99;
+        str4 += "" + str5;
+        console.log(str4);
+
+    // ** Take out half of the sentence ** //
+
+        let sentence2 = "This is one meaningless sentence that needs to be cut in half.";
+        let sentence2Length = sentence2.length;
+        console.log(sentence2Length);
+
+        let newSentence2 = sentence2.slice(0, (sentence2Length / 2) + 1);
+        console.log(newSentence2);
+
+    // ** Capitalize ** //
+
+        // 1.) The whole name of the city where you are now
+        // 2.) The first letter of the city
+        // 3.) Capitlize the middle letter if the city has an odd number of letters 
+        //     or two middle letters if the city has even number of letters.
+        //     HINT: You can use .charAt() and .slice()
+
+        let city1 = "miami";
+
+        // 1.)
+        console.log(city1.toUpperCase());
+
+        // 2.)
+        let upperCity1Letter = city1.charAt(0).toUpperCase();
+
+        let upperCaseCity1 = upperCity1Letter + city1.slice(1);
+        console.log(upperCaseCity1);
+
+        // 3.)
+        if (city1.length % 2 === 1) {
+            let upperMiddleLetter = city1.charAt(city1.length / 2).toUpperCase();
+            console.log(upperMiddleLetter);
+            let upperMiddleLetterCity1 = city1.substring(0, city1.length / 2) + upperMiddleLetter + city1.slice(city1.length / 2 + 1);
+            console.log(upperMiddleLetterCity1);
+        }
+        else if(city1.length % 2 === 0) {
+            let upperMiddleLetters = city1.charAt(city1.length / 2 - 1).toUpperCase() + city1.charAt(city1.length / 2).toUpperCase();
+            console.log(upperMiddleLetters);
+            let upperMiddleLettersCity1 = city1.substring(0, city1.length / 2 - 1) + upperMiddleLetters + city1.slice(city1.length / 2 + 1);
+            console.log(upperMiddleLettersCity1);
+        }
