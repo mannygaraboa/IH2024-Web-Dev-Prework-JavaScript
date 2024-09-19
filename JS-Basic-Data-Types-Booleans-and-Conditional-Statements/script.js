@@ -26,7 +26,7 @@ let isRaining = false;      // ==> boolean
     // ** IF Statement ** //
     /*
         if (condition) {
-            
+            statements
         }
     */
 
@@ -82,4 +82,36 @@ let isRaining = false;      // ==> boolean
     let framework = "Express";
     if (doesCode && (framework === "Express" || framework === "React")) {
         console.log("You are a smart developer!");
+    }
+
+    // ** ELSE Statement ** //
+    /*
+        if (condition) {
+            statement1
+        } else {
+            statement2
+        }
+    */
+
+    let age2 = 25;
+    let isUnderEighteen = age < 18;
+
+    if (isUnderEighteen) {
+        console.log("Sorry! You can't enter :(");
+    }
+    else {
+        console.log("Welcome to the night club!");
+    }
+
+    let isIronhackStudent3 = true;
+    let hardWork2 = 9;
+
+    if (isIronhackStudent) {
+        console.log("Welcome to Ironhack :)");
+
+        if (hardwork > 8) {
+            console.log("You will be a great developer!");
+        } else {
+            console.log("You need to work harder... ");
+        }
     }
