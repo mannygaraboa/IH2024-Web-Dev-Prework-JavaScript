@@ -109,7 +109,7 @@ let isRaining = false;      // ==> boolean
     if (isIronhackStudent) {
         console.log("Welcome to Ironhack :)");
 
-        if (hardwork > 8) {
+        if (hardWork2 > 8) {
             console.log("You will be a great developer!");
         } else {
             console.log("You need to work harder... ");
@@ -137,5 +137,17 @@ let isRaining = false;      // ==> boolean
     }   else if (hardWork3 > 6) {
         console.log("You're getting better, but you could be working harder!");
     }   else {
+        console.log("You're slacking. I saw you fall asleep on the desk.");
+    }
+
+    // If more than one condition is true:
+    let hardWork4 = 9;
+    if (hardWork4 > 8) {
+        console.log("You will be a great developer!");
+    } else if (hardWork4 > 6) {
+        console.log("You're getting better, but you could be working harder!");
+    } else if (hardWork4 >= 5) {
+        console.log("You need to work harder... ");
+    } else {
         console.log("You're slacking. I saw you fall asleep on the desk.");
     }
