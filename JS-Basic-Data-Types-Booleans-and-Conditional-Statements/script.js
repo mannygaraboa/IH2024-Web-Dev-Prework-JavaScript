@@ -115,3 +115,27 @@ let isRaining = false;      // ==> boolean
             console.log("You need to work harder... ");
         }
     }
+
+    // ** ELSE IF Statement ** //
+    /*
+        if (condition1) {
+            statement1
+        } else if (condition2) {
+            statement2
+        } else if (condition3) {
+            statement3
+        } else {
+            if all above turn to be false,
+            this block of code will be executed
+        }
+    */
+
+    let hardWork3 = 7;
+
+    if (hardWork3 > 8) {
+        console.log("You will be a great developer!");
+    }   else if (hardWork3 > 6) {
+        console.log("You're getting better, but you could be working harder!");
+    }   else {
+        console.log("You're slacking. I saw you fall asleep on the desk.");
+    }
