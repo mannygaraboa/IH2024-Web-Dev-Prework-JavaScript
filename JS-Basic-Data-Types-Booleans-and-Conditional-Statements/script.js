@@ -131,7 +131,6 @@ let isRaining = false;      // ==> boolean
     */
 
     let hardWork3 = 7;
-
     if (hardWork3 > 8) {
         console.log("You will be a great developer!");
     }   else if (hardWork3 > 6) {
@@ -141,13 +140,50 @@ let isRaining = false;      // ==> boolean
     }
 
     // If more than one condition is true:
-    let hardWork4 = 9;
-    if (hardWork4 > 8) {
-        console.log("You will be a great developer!");
-    } else if (hardWork4 > 6) {
-        console.log("You're getting better, but you could be working harder!");
-    } else if (hardWork4 >= 5) {
-        console.log("You need to work harder... ");
-    } else {
-        console.log("You're slacking. I saw you fall asleep on the desk.");
-    }
+    // The first condition that is true will be executed
+        let hardWork4 = 9;
+        if (hardWork4 > 8) {
+            console.log("You will be a great developer!");
+        } else if (hardWork4 > 6) {
+            console.log("You're getting better, but you could be working harder!");
+        } else if (hardWork4 >= 5) {
+            console.log("You need to work harder... ");
+        } else {
+            console.log("You're slacking. I saw you fall asleep on the desk.");
+        }
+
+    // Several true blocks:
+        let hardWork5 = 9;
+        if (hardWork5 > 8) {
+            console.log("You will be a great developer!");
+        }
+        if (hardWork5 > 6) {
+            console.log("You're getting better, but you could be working harder!");
+        }
+
+        let hungry = false;
+        let isBreakfastTime = false;
+        let isLunchTime = false;
+        let isDinnerTime = true;
+
+        // If you're hungry and it's breakfast time:
+        if (hungry && isBreakfastTime) {
+            console.log("Let's have breakfast!");
+        }
+        // If you're hungry and it's lunch time:
+        else if (hungry && isLunchTime) {
+            console.log("Time to go to lunch!");
+        }
+        // If it is dinner time and you're not hungry:
+        else if (!hungry && isDinnerTime) {
+            console.log("Let's go for drinks, I'm not very hungry!");
+        }
+        // If it's breakfast time, or I'm in the mood for breakfast:
+        else {
+            console.log("Guess I'll have a coffee break");
+        }
+
+// ************************ //
+// *** Switch Statement *** //
+// ************************ //
+
