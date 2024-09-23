@@ -1,3 +1,5 @@
+// const prompt = require("prompt-sync")({sigint: true});
+
 // **************** //
 // *** Booleans *** //
 // **************** //
@@ -30,10 +32,10 @@ let isRaining = false;      // ==> boolean
         }
     */
 
-    let age = 18;
+    let age1 = 18;
     let companyName = 'Ironhack';
     
-    if (age = 18) {
+    if (age1 = 18) {
         // Somthing happens here
     }
 
@@ -94,7 +96,7 @@ let isRaining = false;      // ==> boolean
     */
 
     let age2 = 25;
-    let isUnderEighteen = age < 18;
+    let isUnderEighteen = age2 < 18;
 
     if (isUnderEighteen) {
         console.log("Sorry! You can't enter :(");
@@ -186,4 +188,146 @@ let isRaining = false;      // ==> boolean
 // ************************ //
 // *** Switch Statement *** //
 // ************************ //
+/*
+    switch (expression) {
+        case value1:
+            statements executed when the result of expression matches value1
+            [break;]
+        case value2:
+            statements executed when the result of expression matches values2
+            [break;]
+        ...
+        case valueN:
+            statements executed when the result of expression matches valueN
+            [break;]
+        default:
+            statements executed when none of the values match the value of the expression
+            [break;]
+    }
+*/
 
+// Fruit Example:
+    // Non-Switch Statement:
+    const fruit1 = "peach"     // prompt("Enter the fruit1 name:", "coconut");
+    let type1 = "";
+
+    if (fruit1 === "pear" || fruit1 === "apple") {
+        type1 = "pome";
+    } else if (fruit1 === "peach" || fruit1 === "coconut") {
+        type1 = "drupe";
+    } else if (fruit1 === "strawberry" || fruit1 === "blueberry" || fruit1 === "blackberry") {
+        type1 = "berry";
+    } else if (fruit1 === "beans" || fruit1 === "peas") {
+        type1 = "legume";
+    } else {
+        type1 = "other";
+    }
+    console.log("Fruit #1: " + fruit1 + " - " + type1); 
+
+    // Switch Statement:
+    const fruit2 = "blueberry";
+    let type2 = "";
+    switch (fruit2) {
+        case "pear":
+        case "apple":
+            type2 = "pome";
+            break;
+        case "peach":
+        case "coconut":
+            type2 = "drupe";
+            break;
+        case "strawberry":
+        case "blueberry":
+        case "blackberry":
+            type2 = "berry";
+            break;
+        case "beans":
+        case "peas":
+            type2 = "legume";
+            break;
+        default:
+            type2 = "other";
+            break;
+    }
+    console.log("Fruit #2: " + fruit2 + " - " + type2); 
+
+// Pet Example:
+    let pet = "dog";
+
+    switch (pet) {
+        case "cat":
+            console.log("I will break a lot of things but hey, I'm adorable ... ");
+            break;
+        case "dog":
+            console.log("I will be a bit annoying but I'm your brest friend ... ");
+            break;
+        case "hamster":
+            console.log("I will be impossible to find but I'm reeeeaaaally cute ... ");
+            break;
+        default:
+            console.log("I'm a special pet");
+            break;
+    }
+
+// ********************** //    
+// *** Truthy & Falsy *** //
+// ********************** //
+
+if (2) {
+    console.log("truthy");
+}
+var name = "Ironhack";
+if ("Hi!" && name) {
+    console.log("truthy");
+}
+var age3;
+if (age3 && "Bye") {
+    console.log("falsy")
+}
+if (0) {
+    console.log("falsy");
+}
+
+// ********************** //
+// *** EXTRA PRACTICE *** //
+// ********************** //
+
+    // ** String Character Comparison ** //
+    let string1 = "web";
+    let string2 = "flower";
+
+    if (string1.length > string2.length) {
+        console.log(string1 + " is longer than " + string2);
+    }
+    else if (string1.length < string2.length) {
+        console.log(string2 + " is longer than " + string1);
+    }
+    else {
+        console.log(string1 + " and " + string2 + " are the same length");
+    }
+
+    // ** Check if word is in Sentence ** //
+    let word1 = "ray";
+    let sentence1 = "I went swimming in the bay today.";
+
+    if (sentence1.includes(word1)) {
+        console.log("The word " + "'" + word1 + "'" + " is in " + "'" + sentence1 + "'");
+    } 
+    else {
+        console.log("The word " + "'" + word1 + "'" + " is NOT in " + "'" + sentence1 + "'");
+    }
+
+    // ** Odd or Even Number ** //
+    let num = 0;
+    
+    if (num % 2 === 0) {
+        console.log(num + " is an EVEN number");
+    }
+    else if (num % 2 === 1){
+        console.log(num + " is an ODD number");
+    }
+
+    // ** Print the Century ** //
+    let year = 1456;
+
+    console.log("Year: " + year + " - Century: " + Math.ceil(year / 100));
