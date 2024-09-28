@@ -26,8 +26,30 @@ console.log(lastElement);
 
     // ** Adding and Removing Elements ** //
 
+    // Adding an element (End of Array):
     const animalsArray4 = ["dog", "cat", "fish"];
     console.log(`Before: ${animalsArray4}`);
 
     animalsArray4.push("lizard");
     console.log(`After: ${animalsArray4}`);
+
+    // Adding an element (Beginning of Array):
+    const animalsArray5 = ["dog", "cat", "fish"];
+    console.log(`Before: ${animalsArray5}`);
+
+    animalsArray5.unshift("whale");
+    console.log(`After: ${animalsArray5}`);
+
+    // Removing an element (End of Array):
+    const animalsArray6 = ["dog", "cat", "fish"];
+    console.log(`Before: ${animalsArray6}`);
+
+    animalsArray6.pop();
+    console.log(`After: ${animalsArray6}`);
+
+    // Removing an element (Beginning of Array):
+    const animalsArray7 = ["dog", "cat", "fish"];
+    console.log(`Before: ${animalsArray7}`);
+
+    animalsArray7.shift();
+    console.log(`After: ${animalsArray7}`);
