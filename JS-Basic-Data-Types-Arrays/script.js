@@ -89,3 +89,98 @@ console.log(lastElement + "\n");
         animalsArray9.splice(0, 1, "Something else");
         console.log(`If we pass a third arguement: ${animalsArray9}\n`);
 
+
+
+// *********************** //
+// *** Array and Loops *** //
+// *********************** //
+
+    // ** For Loop ** //
+    const animalsArray10 = ["dog", "cat", "fish"];
+
+    for (let i = 0; i < animalsArray10.length; i++) {
+        console.log(`Index: ${i} - element: ${animalsArray10[i]}`);
+    }
+
+    // ** While Loop ** //
+    let counter = 0;
+    const animalsArray11 = ["dog", "cat", "fish"];
+
+    while (counter < animalsArray11.length) {
+        console.log(`Counter (===index): ${counter} - element: ${animalsArray11[counter]}`);
+        counter++;
+    }
+
+    // ** forEach Loop ** //
+    const animalsArray12 = ["dog", "cat", "fish"];
+
+    // Option 1: ES5 (Still in use so good to know):
+    // "animal" is just a placeholder, can be any word:
+    animalsArray12.forEach(function(animal){
+        console.log(`option 1: ${animal}`);
+    })
+
+    // Option 2: ES6 (new and cool way that uses arrow function [=>])
+    // "arrayElement" is just a placeholder, can be any word:
+    animalsArray12.forEach(arrayElement => {
+        console.log(`option 2: ${arrayElement}`);
+    });
+
+
+// ********************** //
+// *** EXTRA PRACTICE *** //
+// ********************** //
+
+    // ** Perform a few operations: ** //
+
+        // Add two of your favorite animals to the end of the array:
+        // Remove the first two elements of the array:
+        // Replace the last element in the array wih the word "last":
+
+        const animalsArray13 = ["dog", "cat", "fish"];
+
+        animalsArray13.push("frog", "hedgehog");
+        console.log(animalsArray13);
+
+        animalsArray13.splice(0, 2);
+        console.log(animalsArray13);
+
+        animalsArray13.splice(animalsArray13.length - 1, 1, "last");
+        console.log(animalsArray13);
+
+    // ** Create an array with 6 of your favorite foods: ** //
+    // ** With your loop of choice, iterate through the array but only print out the foods with an even index: ** //
+
+    const favFoods = ["sushi", "rice", "salmon", "spinach", "soup", "salad"];
+
+    for (let i = 0; i < favFoods.length; i++) {
+        if(i % 2 === 0) {
+            console.log(favFoods[i]);
+        }
+    }
+
+    // ** Check if the word appears in given array and print it out it it does or doesn't: ** //
+
+    let word = "miami";
+    let arr = ["bcn", "mia", "sao", "mex", "par", "miami", "ams", "ber", "paris", "lis", "mad"];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (word === arr[i]) {
+            console.log(`${word} DOES match with ${arr[i]}`);
+        } else {
+            console.log(`${word} DOES NOT match with ${arr[i]}`);
+        }
+    }
+
+    // ** Given an array of numbers, calculate the sum: ** //
+    
+    const prices = [10.99, 44.56, 112.79, 3, 5];
+    let sum = 0;
+
+    for (let i = 0; i < prices.length; i++) {
+        sum += prices[i];
+    }
+
+    let sumRounded = Math.round(sum * 10) / 10;
+    console.log(`Sum: ${sum}`);
+    console.log(`Sum rounded: ${sumRounded}`);
