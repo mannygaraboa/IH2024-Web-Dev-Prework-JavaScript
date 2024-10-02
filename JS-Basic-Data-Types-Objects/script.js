@@ -1,13 +1,17 @@
+// ************** //
+// *** Syntax *** //
+// ************** //
+
 let someCoolName = {
-    key1: value1,
-    key2: value2,
-    key3: value3
+    // key1: value1,
+    // key2: value2,
+    // key3: value3
 };
 
 // Key values are always strings:
 
     {
-        name1: 'value1';
+        // name1: 'value1';
     }
 
     // Above equals:
@@ -17,5 +21,36 @@ let someCoolName = {
 
 const student = {
     firstName: 'Bob',
-    lastNam: 'Hill'
+    lastNam: 'Hill',
+    couuse: 'Web Dev',
+    city: 'Miami',
+    age: 29,
+    hasPriorExp: false,
+    goals: ['career change', 'new skills'],
+    step: {
+        application: 'approved',
+        techTest: 'passed',
+        prework: 'submitted',
+        course: 'ongoing',
+        foundJob: '',
+        activeAlumus: ''
+    }
 };
+
+let olympicRecords ={
+    athletics100Men: 'Justin Gatlin',
+    athleticsLongJumpMen: 'Mike Powel'
+};
+
+// ************************ //
+// *** Accessing Values *** //
+// ************************ //
+
+    console.log(olympicRecords);
+
+    // dot notation:
+    console.log(olympicRecords.athletics100Men);
+
+    // brackets notation:
+    console.log(olympicRecords['athleticsLongJumpMen']);
+
