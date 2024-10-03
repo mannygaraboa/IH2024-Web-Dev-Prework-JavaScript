@@ -39,7 +39,8 @@ const student = {
 
 let olympicRecords ={
     athletics100Men: 'Justin Gatlin',
-    athleticsLongJumpMen: 'Mike Powel'
+    athleticsLongJumpMen: 'Mike Powel',
+    swimming200Men: 'Michael Phelps'
 };
 
 // ************************ //
