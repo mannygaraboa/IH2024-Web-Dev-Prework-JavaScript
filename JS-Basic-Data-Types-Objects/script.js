@@ -55,3 +55,15 @@ let olympicRecords ={
     // brackets notation:
     console.log(olympicRecords['athleticsLongJumpMen']);
 
+// ************************* //
+// *** Adding Properties *** //
+// ************************* //
+
+    var olympicRecords2 = {
+        athletics100Men2: 'Justin Gatlin',
+        athleticsLongJumpMen2: 'Mike Powel',
+    }
+
+    olympicRecords2.swimming200Men2 = 'Michael Phelps';
+
+    console.log(olympicRecords2);
