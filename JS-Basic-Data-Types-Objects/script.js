@@ -143,3 +143,19 @@ let olympicRecords ={
     console.log('Updated Product: ', product);
 
     // ** Use given Object and loop through properties: ** //
+        // If property "discount" exists, print "Already discounted by... "
+        // If not, repeat from previous exercise
+
+    let prod = {
+        name: 'headphones',
+        price: 83.7,
+        discount: "7%"
+    };
+
+    if ('discount' in prod) {
+        console.log("Already discount by " + prod.discount);
+    } else {
+        prod.discount = Math.round(prod.price * 0.07);
+        prod.price = prod.price - prod.discount;
+        console.log(prod);
+    }
