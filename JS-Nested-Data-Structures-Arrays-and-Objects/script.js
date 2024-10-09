@@ -43,3 +43,30 @@ console.log(secretsJSninja.author2);
     ];
     console.log(books2[0]);
     console.log(books2[0].title);
+
+    // ** Adding & Removing Data ** //
+
+    let jsDesignPatterns = {
+        title: 'Learning JavaScript Design Patterns',
+        author1: 'Addy Osmani'
+    };
+
+    books2.push(jsDesignPatterns);
+    console.log(books2);
+
+    // ** Arrays in Objects ** //
+
+    const books3 = [
+        {
+            title: 'Eloquent JavaScript',
+            author: 'Marijn Haverbeke'
+        },
+        {
+            title: 'Secrets of the JavaScript Ninja',
+            authors: ['John Resig', 'Bear Bibeault']
+        }
+    ];
+
+    console.log(books3[1].authors);
+    console.log(books3[1].authors[0]);
+    console.log(books3[1].authors[1]);
