@@ -70,3 +70,27 @@ console.log(secretsJSninja.author2);
     console.log(books3[1].authors);
     console.log(books3[1].authors[0]);
     console.log(books3[1].authors[1]);
+
+// ************************** //
+// *** Objects in Objects *** //
+// ************************** //
+
+let currentGroup = {
+    course: 'Web Development',
+    type: 'Full Time',
+    squadName: 'squad-307',
+    city: 'Miami',
+    teacher: {
+        name: 'Nick',
+        age: 27
+    },
+    classroom: {
+        floor: 3,
+        seats: 30,
+        available: true
+    }
+};
+
+console.log(currentGroup.teacher);
+console.log(currentGroup.teacher.name);
+console.log(currentGroup.classroom.available);
