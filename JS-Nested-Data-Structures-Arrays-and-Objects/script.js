@@ -94,3 +94,57 @@ let currentGroup = {
 console.log(currentGroup.teacher);
 console.log(currentGroup.teacher.name);
 console.log(currentGroup.classroom.available);
+
+// *********************** //
+// *** Array of Arrays *** //
+// *********************** //
+
+const books4 = [
+    ['Eloquent JavaScript', 'Secrets of the JavaScript Ninja'],
+    ['Learn Python the Hard Way', 'Real Python Course'],
+    ['Effective Java', 'Java Generics and Collections']
+];
+
+console.log(books4[1]);
+console.log(books4[1][0]);
+console.log(books4[4]);         // ==> Undefined
+
+// ************************************* //
+// *** 2D Arrays with Nested Objects *** //
+// ************************************* //
+
+let basic = {
+    language: 'JavaScript',
+    frameworks: [
+        {
+            end: 'back',
+            list: [
+                {
+                    name: 'ExpressJS',
+                    released: 2010
+                },
+                {
+                    name: 'MeteorJS',
+                    released: 2012
+                }
+            ]
+        },
+        {
+            end: 'front',
+            list: [
+                {
+                    name: 'ReactJS',
+                    released: '2013'
+                },
+                {
+                    name: 'VueJS',
+                    released: 2014
+                }
+            ]
+        }
+    ]
+}
+
+console.log(basic.frameworks);
+console.log(basic.frameworks[1]);
+console.log(basic.frameworks[1].list[0]);
