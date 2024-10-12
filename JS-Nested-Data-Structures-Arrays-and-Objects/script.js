@@ -174,7 +174,7 @@ console.log(basic.frameworks[1].list[0]);
         console.log(products[i].name);
     }
 
-    // add a new phone ath the beginning of the array
+    // add a new phone at the beginning of the array
     products.unshift(
         {
             name: 'Google Pixel',
@@ -186,3 +186,19 @@ console.log(basic.frameworks[1].list[0]);
     // remove the last element of the array
     products.pop();
     console.log(products);
+
+    // ** Given the array, print: ** //
+
+    let course2 = {
+        name: 'Web Development',
+        type: ['full-time', 'part-time'],
+        topics: ['HTML/CSS Responsive Design', 'JavaScript', 'MongoDB', 'Node', 'Express', 'React']
+    }
+    // Your course type (Full-Time or Part-Time)
+    console.log(course2.type[0]);
+
+    // The most familiar topic
+    console.log(course2.topics[1]);
+
+    // The least familiar topic
+    console.log(course2.topics[4]);
