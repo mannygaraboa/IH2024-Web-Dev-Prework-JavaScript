@@ -148,3 +148,41 @@ let basic = {
 console.log(basic.frameworks);
 console.log(basic.frameworks[1]);
 console.log(basic.frameworks[1].list[0]);
+
+// ********************** //
+// *** EXTRA PRACTICE *** //
+// ********************** //
+
+    // ** Using given array of objects: ** //
+
+    let products = [
+        {
+            name: 'iPhone',
+            price: 799.99
+        },
+        {
+            name: 'Samsung Galaxy S10',
+            price: 900.00
+        }
+    ];
+
+    // display price of iPhone
+    console.log(products[0].price);
+
+    // display both phones' names
+    for (let i = 0; i < products.length; i++) {
+        console.log(products[i].name);
+    }
+
+    // add a new phone ath the beginning of the array
+    products.unshift(
+        {
+            name: 'Google Pixel',
+            price: 500.00
+        }
+    );
+    console.log(products)
+
+    // remove the last element of the array
+    products.pop();
+    console.log(products);
