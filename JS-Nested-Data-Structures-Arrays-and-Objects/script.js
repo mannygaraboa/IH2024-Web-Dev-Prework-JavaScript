@@ -229,3 +229,14 @@ console.log(basic.frameworks[1].list[0]);
 
     // console.log(???) ==> Ana moved from Barcelona to Madrid to take part-time Web Development course.
     console.log(`${student.firstName} moved from ${student.address.city} to ${student.attendedIn} to take ${student.course.type} ${student.course.name} course.`);
+
+    // ** Given a 2D array, print the following: ** //
+    
+    const ironCampuses = [
+        ["Mexico City", "Miami", "Sao Paulo"],
+        ["Amsterdam", "Barcelona", "Berlin", "Lisbon", "Madrid", "Paris"]
+    ];
+
+    console.log(ironCampuses[0][1]);           // ==> Miami
+    console.log(ironCampuses[1][0]);           // ==> Amsterdam
+    console.log(ironCampuses[1][5]);           // ==> Paris
