@@ -240,3 +240,43 @@ console.log(basic.frameworks[1].list[0]);
     console.log(ironCampuses[0][1]);           // ==> Miami
     console.log(ironCampuses[1][0]);           // ==> Amsterdam
     console.log(ironCampuses[1][5]);           // ==> Paris
+    
+    // ** Use the example from the lesson with the framekworks to retrieve the following: ** //
+
+    let basic2 = {
+        language: 'JavaScript',
+        frameworks: [
+            {
+                end: 'back',
+                list: [
+                    {
+                        name: 'ExpressJS',
+                        released: 2010
+                    },
+                    {
+                        name: 'MeteorJS',
+                        released: 2012
+                    }
+                ]
+            },
+            {
+                end: 'front',
+                list: [
+                    {
+                        name: 'ReactJS',
+                        released: '2013'
+                    },
+                    {
+                        name: 'VueJS',
+                        released: 2014
+                    }
+                ]
+            }
+        ]
+    }
+
+    // consolel.log(???); ==> ExpressJS
+    console.log(basic2.frameworks[0].list[0].name);
+
+    // conosole.log(???); ==> In Ironhack, I'll learn ExpressJS and ReactJS.
+    console.log(`In Ironhackk, I'll learn ${basic2.frameworks[0].list[0].name} and ${basic2.frameworks[1].list[0].name}.`);
