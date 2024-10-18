@@ -32,3 +32,10 @@ sayHello2('ger');
 sayHello2('esp');
 sayHello2();
 sayHello2(null);
+
+function printInput(theInput) {
+    console.log(`Passed input is: ${theInput}`);
+}
+
+printInput(2);
+printInput("Ironhack is the best!");
