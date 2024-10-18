@@ -31,3 +31,4 @@ sayHello2('fr');
 sayHello2('ger');
 sayHello2('esp');
 sayHello2();
+sayHello2(null);
