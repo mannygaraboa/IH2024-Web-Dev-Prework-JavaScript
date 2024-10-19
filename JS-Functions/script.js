@@ -39,3 +39,11 @@ function printInput(theInput) {
 
 printInput(2);
 printInput("Ironhack is the best!");
+
+function printInput2(theInput, numberOfTimes) {
+    for (let i = 0; i < numberOfTimes; i++) {
+        console.log(`Inputted: ${theInput}`);
+    }
+}
+
+printInput2(2, 3);
