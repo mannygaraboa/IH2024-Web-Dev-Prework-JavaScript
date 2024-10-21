@@ -47,3 +47,14 @@ function printInput2(theInput, numberOfTimes) {
 }
 
 printInput2(2, 3);
+
+function printElements(someArray) {
+    for (let i = 0; i < someArray.length; i++) {
+        console.log(`Element: ${someArray[i]}`);
+    }
+}
+
+    const funnyArray = ["dog", 4, "miami", true];
+
+printElements(["hello", "kitty", "pizza", 3, 78, false]);
+printElements(funnyArray);
