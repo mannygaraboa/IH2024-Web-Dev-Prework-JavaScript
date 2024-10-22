@@ -1,11 +1,17 @@
-// ** Syntax ** //
+// *********************** //
+// *** Function Syntax *** //
+// *********************** //
+
     // function <name> ([<argument_list>]) {
     //     <instructions>
 
     //     [return <expression>;]
     // }
 
-function sayHello() {
+// ****************************** //
+// *** Arguments & Parameters *** //
+// ****************************** //
+    function sayHello() {
     console.log('Hello!');
 }
 
@@ -58,3 +64,21 @@ function printElements(someArray) {
 
 printElements(["hello", "kitty", "pizza", 3, 78, false]);
 printElements(funnyArray);
+
+// ************************ //
+// *** Returning Values *** //
+// ************************ //
+
+function calculateSum(num1, num2) {
+    console.log(num1, num2);
+    return num1 + num2;
+}
+
+function printResult() {
+    const result = calculateSum(3, 6);
+    console.log(`The result is ${result}`);
+}
+
+calculateSum(4, 5);
+calculateSum(11.4, 11.4);
+printResult();
