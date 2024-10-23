@@ -82,3 +82,10 @@ function printResult() {
 calculateSum(4, 5);
 calculateSum(11.4, 11.4);
 printResult();
+
+function multiplyNumbers(a, b) {
+    console.log(a * b);
+    return a * b;
+}
+
+multiplyNumbers(4, 7);
