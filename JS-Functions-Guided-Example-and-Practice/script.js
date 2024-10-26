@@ -53,3 +53,16 @@ calculator(6, 7, '');
 calculator('a', 7, '-');
 calculator(6, 7, "=");
 calculator(6, 7, "blah");
+
+// ********************** //
+// *** EXTRA PRACTICE *** //
+// ********************** //
+
+    // ** Define function welcome() that will receive one argument, your name, and greet you with your name. ** //
+    function welcome(name) {
+        let greeting = `Hello and welcome, ${name}!`;
+        console.log(greeting);
+        return greeting;
+    }
+
+    welcome("Manuel");
