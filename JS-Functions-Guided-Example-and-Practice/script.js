@@ -66,3 +66,13 @@ calculator(6, 7, "blah");
     }
 
     welcome("Manuel");
+
+    // ** Deing a function printToTwenty() ** //
+
+    function printToTwenty() {
+        for (let i = 0; i <= 20; i++) {
+            console.log(i);
+        }
+    }
+
+    printToTwenty();
