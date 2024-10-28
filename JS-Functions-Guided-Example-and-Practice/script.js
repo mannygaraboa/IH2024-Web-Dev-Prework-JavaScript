@@ -67,7 +67,7 @@ calculator(6, 7, "blah");
 
     welcome("Manuel");
 
-    // ** Deing a function printToTwenty() ** //
+    // ** Define a function printToTwenty() to print numbers from 0 to 20.** //
 
     function printToTwenty() {
         for (let i = 0; i <= 20; i++) {
@@ -76,3 +76,13 @@ calculator(6, 7, "blah");
     }
 
     printToTwenty();
+
+    // ** Define a function printNumbers() that receives one argument and prints numbers 0 to that number ** //
+
+    function printNumbers(num) {
+        for (let i = 0; i <= num; i++) {
+            console.log(i);
+        }
+    }
+
+    printNumbers(30);
