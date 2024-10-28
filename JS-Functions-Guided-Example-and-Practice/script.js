@@ -86,3 +86,25 @@ calculator(6, 7, "blah");
     }
 
     printNumbers(30);
+
+    // ** Define a function printArrElements(someArr) ** //
+
+    let ironCities = [
+        'Amsterdam',
+        'Barcelona',
+        'Berlin',
+        'Lisbon',
+        'Madrid',
+        'Mexico City',
+        'Miami',
+        'Paris',
+        'Sao Paulo'
+    ]
+
+    function printArrElements(someArr) {
+        for (let i = 0; i < someArr.length; i++) {
+            console.log(someArr[i]);
+        }
+    }
+
+    printArrElements(ironCities);
