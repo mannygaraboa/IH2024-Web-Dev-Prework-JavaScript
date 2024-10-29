@@ -108,3 +108,32 @@ calculator(6, 7, "blah");
     }
 
     printArrElements(ironCities);
+
+        // Define an array of favorite cities and favorite foods to pass it in printArrElemments()
+        let favCities = [
+            'Miami',
+            'Austin',
+            'Panama'
+        ]
+
+        let favFoods = [
+            'sushi',
+            'pasta',
+            'rice',
+            'eggplant'
+        ]
+
+        printArrElements(favCities);
+        printArrElements(favFoods);
+
+    // ** Define function printEvens(someArr) & use the "ironCities" array to print only even numbers ** //
+
+    function printEvens(someArr) {
+        for (let i = 0; i <= someArr.length; i++) {
+            if (i % 2 === 0) {
+                console.log(someArr[i]);
+            }
+        }
+    }
+
+    printEvens(ironCities);
