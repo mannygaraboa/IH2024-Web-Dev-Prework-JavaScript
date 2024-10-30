@@ -137,3 +137,18 @@ calculator(6, 7, "blah");
     }
 
     printEvens(ironCities);
+
+    // ** Write a function to calculate a sum of all arguments of an array ** //
+
+    const price = [5, 7.99, 9.99, 0.99, 21];
+
+    function sumArr(someArr) {
+        let sum = 0;
+        for (let i = 0; i < someArr.length; i++) {
+            sum += someArr[i];
+        }
+        console.log(`$${sum}`);
+        return `$${sum}`;
+    }
+
+    sumArr(price);
