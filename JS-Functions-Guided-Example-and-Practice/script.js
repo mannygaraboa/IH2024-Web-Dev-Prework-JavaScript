@@ -152,3 +152,16 @@ calculator(6, 7, "blah");
     }
 
     sumArr(price);
+
+    // ** Define function stringToLetters() that receives a string and returns an array of each character. ** //
+
+    let stringArr = [];
+    function stringToLetters(string) {
+        for (let i = 0; i < string.length; i++) {
+            stringArr.push(string[i]);
+        }
+        console.log(stringArr);
+        return stringArr;
+    }
+
+    stringToLetters("hello");
