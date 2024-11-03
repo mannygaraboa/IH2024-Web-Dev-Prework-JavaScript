@@ -165,3 +165,33 @@ calculator(6, 7, "blah");
     }
 
     stringToLetters("hello");
+
+    // ** Define a countNumbers() function ** //
+    // Count from 1 to 100
+    // On numbers divisible by 4 print "Hey"
+    // On numbers divisible by 6 print "There"
+    // On numbers divisible by 4 and 6 print "Ironhack"
+    // Skips numbers divisble by 7
+    // On number of your age display a "!" next to it
+
+    function countNumbers() {
+        for (let i = 0; i <= 100; i++) {
+            if (i === 29) {
+                console.log(`${i}!`);
+            }
+            else if (i % 4 === 0 && i % 6 === 0) {
+                console.log("Ironhack");
+            }
+            else if (i % 4 === 0) {
+                console.log("Hey");
+            }
+            else if (i % 6 === 0) {
+                console.log("There");
+            }
+            else {
+                console.log(i);
+            }
+        }
+    }
+
+    countNumbers();
