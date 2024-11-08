@@ -20,3 +20,18 @@ let phone = {
     },
     chip: ['bionic', 'neural engine', 'embedded motion processor']
 };
+
+function getPhoneDetails(thePhone) {
+    console.log(`${thePhone.type} ${
+        thePhone.model
+    } by ${thePhone.brand.toUpperCase()} has the following characteristics:
+    1. capacity: ${thePhone.characteristics.capacity},
+    2. dimensions: ${thePhone.characteristics.size.height} x ${thePhone.characteristics.size.width} x ${thePhone.characteristics.size.depth}, 
+    as well as the chip specs:`);
+
+    for (let i = 0; i < thePhone.chip.length; i++) {
+        console.log(`${i + 1} - ${thePhone.chip[i]}`);
+    }
+}
+
+getPhoneDetails(phone);
