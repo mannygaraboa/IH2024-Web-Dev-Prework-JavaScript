@@ -35,3 +35,13 @@ function getPhoneDetails(thePhone) {
 }
 
 getPhoneDetails(phone);
+
+const someArr = [
+    'max',
+    34,
+    true,
+    { name: 'sandra', student: true},
+    ['javascript', 'mongodb', 'react']
+];
+
+console.log(someArr);
