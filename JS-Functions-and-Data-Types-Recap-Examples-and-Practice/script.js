@@ -45,3 +45,8 @@ const someArr = [
 ];
 
 console.log(someArr);
+
+someArr.forEach(elem => {
+    let theType = typeof elem;
+    console.log(`The variable ${elem} is type of ${theType}`);
+});
