@@ -50,3 +50,24 @@ someArr.forEach(elem => {
     let theType = typeof elem;
     console.log(`The variable ${elem} is type of ${theType}`);
 });
+
+// ********************** //
+// *** EXTRA PRACTICE *** //
+// ********************** //
+
+// ** Deing a function to loop through an array and print the type of each element ** //
+
+let array1 = [
+    'Manuel',
+    29,
+    true,
+    { origin1: 'Panama', origin2: 'Cuba'},
+    ['Swimmer', 'Runner', 'Cyclist']
+];
+function printTypeOf(someArr) {
+    for (let i = 0; i < someArr.length; i++) {
+        console.log(someArr[i] + " is a type of: " + typeof(someArr[i]));
+    }
+}
+
+printTypeOf(array1);
