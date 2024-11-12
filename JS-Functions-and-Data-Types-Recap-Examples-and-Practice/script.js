@@ -71,3 +71,28 @@ function printTypeOf(someArr) {
 }
 
 printTypeOf(array1);
+
+// ** Define a function getCredentials() ** //
+// Print the output of the passed object as an argument
+
+let property = {
+    owner: {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 44
+    },
+    isForSale: true,
+    sqrm: 120,
+    address: {
+        street: 'Happy St',
+        number: 123,
+        city: 'Miami',
+        state: 'FL',
+        country: 'US'
+    },
+    amenities: ['pool', 'tennis court', 'private parking', 'yard']
+};
+
+function getCredentials() {
+    
+}
