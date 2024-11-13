@@ -73,6 +73,20 @@ function printTypeOf(someArr) {
 printTypeOf(array1);
 
 // ** Define a function getCredentials() ** //
+// Receive the following object as arguement and print results
+
+let user = {
+    username: 'ironhacker',
+    password: '123iron345'
+};
+
+function getCredentials(someUser) {
+    console.log(`Username is: ${someUser.username} and the password is: ${someUser.password}.`);
+}
+
+getCredentials(user);
+
+// ** Define a function checkProperty() ** //
 // Print the output of the passed object as an argument
 
 let property = {
@@ -81,7 +95,7 @@ let property = {
         lastName: 'Doe',
         age: 44
     },
-    isForSale: true,
+    isForSale: false,
     sqrm: 120,
     address: {
         street: 'Happy St',
@@ -93,6 +107,12 @@ let property = {
     amenities: ['pool', 'tennis court', 'private parking', 'yard']
 };
 
-function getCredentials() {
-    
+function checkProperty(someProperty) {
+    if (someProperty.isForSale === true) {
+        console.log(`The owner, ${someProperty.owner.firstName} ${someProperty.owner.lastName} put the home for sale! The property has ${someProperty.amenities.length} amenities.`);
+    } else if (someProperty.isForSale === false){
+        console.log(`The home in ${someProperty.address.street} no. ${someProperty.address.number} is not for sale.`);
+    }
 }
+
+checkProperty(property);
