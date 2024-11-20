@@ -28,7 +28,19 @@ function placeHorizontal(thePlayer, command) {
     }
 }
 
+function placeVertical(thePlayer, command) {
+    if (thePlayer.x >= 0 && thePlayer.x < 2) {
+        if (command === 'u') {
+            thePlayer.x -= 1;
+        } else if (command === 'd') {
+            thePlayer.x += 1;
+        }
+        console.log(`Player has position: x = ${thePlayer.x}, y = ${thePlayer.y}`);
+    }
+}
+
 placeHorizontal(player, 'l');
+placeVertical(player, 'u');
 // placeHorizontal(player, 'l');
 // placeHorizontal(player, 'r');
 
