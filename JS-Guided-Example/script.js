@@ -8,7 +8,8 @@
 
 const player = {
     x: 1,
-    y: 1
+    y: 1,
+    path: [{x: 1, y: 1}]
 };
 
 function placeHorizontal(thePlayer, command) {
@@ -19,11 +20,18 @@ function placeHorizontal(thePlayer, command) {
             thePlayer.y += 1;
         }
         console.log(`Player has position: x = ${thePlayer.x}, y = ${thePlayer.y}`);
+
+        let newPosition = { x: thePlayer.x, y: thePlayer.y };
+        thePlayer.path.push(newPosition);
     } else {
         console.log("You can't place player outside of the board!");
     }
 }
 
 placeHorizontal(player, 'l');
-placeHorizontal(player, 'l');
-placeHorizontal(player, 'r');
+// placeHorizontal(player, 'l');
+// placeHorizontal(player, 'r');
+
+for (let i = 0; i < player.path.length; i++) {
+    console.log(`Path ${i} ==> x = ${player.path[i].x}, y = ${player.path[i].y}`);
+}
