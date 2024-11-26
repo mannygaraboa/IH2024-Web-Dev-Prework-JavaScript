@@ -36,6 +36,11 @@ function placeVertical(thePlayer, command) {
             thePlayer.x += 1;
         }
         console.log(`Player has position: x = ${thePlayer.x}, y = ${thePlayer.y}`);
+
+        let newPosition = { x: thePlayer.x, y: thePlayer.y};
+        thePlayer.path.push(newPosition);
+    } else {
+        console.log("Youuuuu can't place player outside of the board!");
     }
 }
 
