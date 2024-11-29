@@ -44,10 +44,33 @@ function placeVertical(thePlayer, command) {
     }
 }
 
-placeHorizontal(player, 'l');
-placeVertical(player, 'u');
+function command(thePlayer, orders) {
+    for (let i = 0; i < orders.length; i++) {
+        let order = orders[i];
+        switch (order) {
+            case 'l': // left
+                placeHorizontal(thePlayer, order);
+                break;
+            case 'r': // right
+                placeHorizontal(thePlayer, order);
+                break;
+            case 'u': // up
+                placeVertical(thePlayer, order);
+                break;
+            case 'd': // down
+                placeVertical(thePlayer, order);
+                break;
+        }
+    }
+    console.log(thePlayer.path);
+}
+
+// placeHorizontal(player, 'l');
+// placeVertical(player, 'u');
 // placeHorizontal(player, 'l');
 // placeHorizontal(player, 'r');
+
+command(player, 'lurrddd');
 
 for (let i = 0; i < player.path.length; i++) {
     console.log(`Path ${i} ==> x = ${player.path[i].x}, y = ${player.path[i].y}`);
